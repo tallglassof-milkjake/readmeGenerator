@@ -55,21 +55,50 @@ const questions = [
 
 // function to write README file
 async function writeToFile(fileName, data) {
-
     inquirer.prompt(questions);
     
-    fs.writeFile(data.title + '.txt', data, (err) => {
+    const myReadme = `
+    # ${questions.title}
+    
+    ## Contents
+    1.[Description](#Description)
+    1.[Installation](#Installation)
+    1.[Contributing](#Contributing)
+    1.[Tests](#Tests)
+    1.[Questions](#Questions)
+    
+    ## Description
+    **${questions.description}**
+    
+    ## Installation
+    **${questions.installation}**
+    
+    ## Contributing
+    **${questions.contributions}**
+    
+    ## Tests
+    **${questions.test}
+    
+    ## Questions
+    If you have any questions find my [Here](${questions.github}) or email me at ${questions.email}!`
+    
+    function writeFile (err, data) {
         if (err) throw err;
-    })
+
+        await
+        fs.writeFile(`${data.title}.txt`, myReadme, (err) => {
+            if (err) throw err;
+        }) 
+    }
+    writeFile();
 }
 
 // function to initialize program
 function init() {
-
+    
 }
 
 // function call to initialize program
 init();
 
-
-writeToFile()
+writeToFile();
