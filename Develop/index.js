@@ -55,7 +55,7 @@ const questions = [
 
 // function to write README file
 async function writeToFile(fileName, data) {
-    inquirer.prompt(questions);
+    await inquirer.prompt(questions);
     
     const myReadme = `
     # ${questions.title}
@@ -85,9 +85,9 @@ async function writeToFile(fileName, data) {
     function writeFile (err, data) {
         if (err) throw err;
 
-        await
-        fs.writeFile(`${data.title}.txt`, myReadme, (err) => {
+        fs.writeFile(`${questions.title}.txt`, myReadme, async (err) => {
             if (err) throw err;
+            
         }) 
     }
     writeFile();
@@ -95,10 +95,9 @@ async function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-    
+    writeToFile();
 }
 
 // function call to initialize program
 init();
 
-writeToFile();
