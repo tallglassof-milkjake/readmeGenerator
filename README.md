@@ -1,40 +1,40 @@
 # ReadmeGenerator
 
-      ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-      
-      ## Table of Contents
+![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 
-      * **[Description](#Description)**
+## Table of Contents
 
-      * **[Installation](#Installation)**
+* **[Description](#Description)**
 
-      * **[Constributions](#Contributions)**
+* **[Installation](#Installation)**
 
-      * **[Testing](#Testing)**
+* **[Constributions](#Contributions)**
 
-      * **[Questions](#Questions)**
+* **[Testing](#Testing)**
 
-      
-      ### Description
+* **[Questions](#Questions)**
 
-      A readme generator
 
-      
-      ### Installation
+### Description
 
-      run node index.js
-      
+An easy to use, terminal ran readme generator application. Generate your projects README.md file from your command line or terminal and save time to keep working on the important stuff!
 
-      ### Constributions
 
-      None
-      
+### Installation
 
-      ### Testing
+Simply copy this repo onto your machine and run 'node index.js' and follow the prompts. Then push the .md file created into the root directory of your repository.
 
-      run node index.js
 
-      
-      ### Questions
+### Constributions
 
-      **Any questions please contact me either [here](tallglassof-milkjake) or at jrmackinlay90@gmail.com
+None
+
+
+### Testing
+
+Follow the installation guide except omit any sensitive or personal information and track any information you may be concerned about before pushing to your repository.
+
+
+### Questions
+
+**Any questions please contact me either [here](tallglassof-milkjake) or at jrmackinlay90@gmail.com

@@ -78,44 +78,44 @@ async function writeToFile() {
     const myFile = 
       `# ${data.title}
 
-      ${myLicense}
-      
-      ## Table of Contents
+${myLicense}
 
-      * **[Description](#Description)**
+## Table of Contents
 
-      * **[Installation](#Installation)**
+* **[Description](#Description)**
 
-      * **[Constributions](#Contributions)**
+* **[Installation](#Installation)**
 
-      * **[Testing](#Testing)**
+* **[Constributions](#Contributions)**
 
-      * **[Questions](#Questions)**
+* **[Testing](#Testing)**
 
-      
-      ### Description
+* **[Questions](#Questions)**
 
-      ${data.description}
 
-      
-      ### Installation
+### Description
 
-      ${data.installation}
-      
+${data.description}
 
-      ### Constributions
 
-      ${data.contributions}
-      
+### Installation
 
-      ### Testing
+${data.installation}
 
-      ${data.test}
 
-      
-      ### Questions
+### Constributions
 
-      **Any questions please contact me either [here](${data.github}) or at ${data.email}`;
+${data.contributions}
+
+
+### Testing
+
+${data.test}
+
+
+### Questions
+
+**Any questions please contact me either [here](${data.github}) or at ${data.email}`;
 
     fs.writeFile(`README.md`, myFile, (err) => {
       if (err) {
