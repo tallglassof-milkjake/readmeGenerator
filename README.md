@@ -1,4 +1,4 @@
-# ReadmeGenerator
+# The Good File
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
@@ -17,22 +17,22 @@
 
 ### Description
 
-An easy to use, terminal ran readme generator application. Generate your projects README.md file from your command line or terminal and save time to keep working on the important stuff!
+It makes good files
 
 
 ### Installation
 
-Simply copy this repo onto your machine and run 'node index.js' and follow the prompts. Then push the .md file created into the root directory of your repository.
+Run good files
 
 
 ### Constributions
 
-None
+Only from Peter File
 
 
 ### Testing
 
-Follow the installation guide except omit any sensitive or personal information and track any information you may be concerned about before pushing to your repository.
+Ask 
 
 
 ### Questions
