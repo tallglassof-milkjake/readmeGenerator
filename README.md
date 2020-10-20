@@ -1,6 +1,6 @@
 # ReadmeGenerator
 
-![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Table of Contents
 
@@ -37,4 +37,4 @@ Follow the installation guide except omit any sensitive or personal information 
 
 ### Questions
 
-**Any questions please contact me either [here](tallglassof-milkjake) or at jrmackinlay90@gmail.com
+**Any questions please contact me either [here](https://github.com/tallglassof-milkjake) or at jrmackinlay90@gmail.com

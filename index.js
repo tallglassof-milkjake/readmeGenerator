@@ -115,7 +115,7 @@ ${data.test}
 
 ### Questions
 
-**Any questions please contact me either [here](${data.github}) or at ${data.email}`;
+**Any questions please contact me either [here](https://github.com/${data.github}) or at ${data.email}`;
 
     fs.writeFile(`README.md`, myFile, (err) => {
       if (err) {
