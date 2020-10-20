@@ -1,4 +1,4 @@
-# README
+# ReadmeGenerator
 
       ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
       
@@ -17,12 +17,12 @@
       
       ### Description
 
-      A basic README.md generator to make creating a readme file less tiresome so you can spend more time programming!
+      A readme generator
 
       
       ### Installation
 
-      Simply get this repo onto your local machine and run 'node index.js' in the command line or terminal and follow the prompts!
+      run node index.js
       
 
       ### Constributions
@@ -32,7 +32,7 @@
 
       ### Testing
 
-      Follow the installation steps but omit any sensitive or personal information and check the file created before pushing to your repo!
+      run node index.js
 
       
       ### Questions

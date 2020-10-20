@@ -117,7 +117,7 @@ async function writeToFile() {
 
       **Any questions please contact me either [here](${data.github}) or at ${data.email}`;
 
-    fs.writeFile(`${data.title}.md`, myFile, (err) => {
+    fs.writeFile(`README.md`, myFile, (err) => {
       if (err) {
         console.log(err)
       };
