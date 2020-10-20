@@ -66,7 +66,7 @@ async function writeToFile() {
     if (data.license === "Apache license 2.0") {
       myLicense = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]";
     } else if (data.licence = "MIT") {
-      myLicense = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+      myLicense = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
     } else if (data.license = "GNU General Public License v3.0") {
       myLicense = "[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)]";
     } else {
@@ -76,29 +76,29 @@ async function writeToFile() {
     console.log(myLicense)
 
     const myFile = 
-      `${myLicense}
-      # ${data.title}
+      `${myLicense}\
+      # ${data.title}\
       
-      ## Table of Contents
-      * **[Description](#Description)**
-      * **[Installation](#Installation)**
-      * **[Constributions](#Contributions)**
-      * **[Testing](#Testing)**
-      * **[Questions](#Questions)**
+      ## Table of Contents\
+      * **[Description](#Description)**\
+      * **[Installation](#Installation)**\
+      * **[Constributions](#Contributions)**\
+      * **[Testing](#Testing)**\
+      * **[Questions](#Questions)**\
       
-      ### Description
-      ${data.description}
+      ### Description\
+      ${data.description}\
       
-      ### Installation
-      ${data.installation}
+      ### Installation\
+      ${data.installation}\
       
-      ### Constributions
-      ${data.contributions}
+      ### Constributions\
+      ${data.contributions}\
       
-      ### Testing
-      ${data.test}
+      ### Testing\
+      ${data.test}\
       
-      ### Questions
+      ### Questions\
 
       **Any questions please contact me either [here](${data.github}) or at ${data.email}`;
 
