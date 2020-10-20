@@ -75,8 +75,8 @@ async function writeToFile() {
 
     console.log(myLicense)
 
-    const myFile = `
-      ${myLicense}
+    const myFile = 
+      `${myLicense}
       # ${data.title}
       
       ## Table of Contents
