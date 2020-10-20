@@ -2,7 +2,14 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 
 // array of questions for user
-const questions = [
+
+
+
+
+// function to write README file
+async function writeToFile() {
+
+  inquirer.prompt([
     {
         type: "input",
         name: "title",
@@ -49,55 +56,45 @@ const questions = [
         name: "email",
         message: "Enter your email address"
       },
-];
+  ]).then(async function promptData(data) {
+    
+    console.log("data achieved");
+    console.log(data);
 
+    const myFile = `
+      # ${data.title}
+      
+      ## Table of Contents
+      
+      ### ${data.description}
+      
+      ### ${data.installation}
+      
+      ### ${data.contributions}
+      
+      ### ${data.test}
+      
+      ### Questions
 
+      **Any questions please contact me either [here](${data.github}) or at ${data.email}`;
 
-// function to write README file
-async function writeToFile(fileName, data) {
-    await inquirer.prompt(questions);
-    
-    const myReadme = `
-    # ${questions.title}
-    
-    ## Contents
-    1.[Description](#Description)
-    1.[Installation](#Installation)
-    1.[Contributing](#Contributing)
-    1.[Tests](#Tests)
-    1.[Questions](#Questions)
-    
-    ## Description
-    **${questions.description}**
-    
-    ## Installation
-    **${questions.installation}**
-    
-    ## Contributing
-    **${questions.contributions}**
-    
-    ## Tests
-    **${questions.test}
-    
-    ## Questions
-    If you have any questions find my [Here](${questions.github}) or email me at ${questions.email}!`
-    
-    function writeFile (err, data) {
-        if (err) throw err;
-
-        fs.writeFile(`${questions.title}.txt`, myReadme, async (err) => {
-            if (err) throw err;
-            
-        }) 
-    }
-    writeFile();
-}
+    fs.writeFile(`${data.title}.txt`, myFile, (err) => {
+      if (err) {
+        console.log(err)
+      };
+      
+    });
+  });  
+  
+};
 
 // function to initialize program
-function init() {
+async function init(data) {
     writeToFile();
+
+    
+
 }
 
 // function call to initialize program
 init();
-
