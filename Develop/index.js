@@ -43,7 +43,7 @@ async function writeToFile() {
           "Apache license 2.0",
           "MIT",
           "GNU General Public License v3.0",
-          "Academic Free License v3.0"
+          "Mozilla Public License 2.0"
         ]
       },
       {
@@ -61,24 +61,48 @@ async function writeToFile() {
     console.log("data achieved");
     console.log(data);
 
+    let myLicense = "";
+
+    if (data.license === "Apache license 2.0") {
+      myLicense = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]";
+    } else if (data.licence = "MIT") {
+      myLicense = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+    } else if (data.license = "GNU General Public License v3.0") {
+      myLicense = "[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)]";
+    } else {
+      myLicense = "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)]"
+    }
+
+    console.log(myLicense)
+
     const myFile = `
+      ${myLicense}
       # ${data.title}
       
       ## Table of Contents
+      * **[Description](#Description)**
+      * **[Installation](#Installation)**
+      * **[Constributions](#Contributions)**
+      * **[Testing](#Testing)**
+      * **[Questions](#Questions)**
       
-      ### ${data.description}
+      ### Description
+      ${data.description}
       
-      ### ${data.installation}
+      ### Installation
+      ${data.installation}
       
-      ### ${data.contributions}
+      ### Constributions
+      ${data.contributions}
       
-      ### ${data.test}
+      ### Testing
+      ${data.test}
       
       ### Questions
 
       **Any questions please contact me either [here](${data.github}) or at ${data.email}`;
 
-    fs.writeFile(`${data.title}.txt`, myFile, (err) => {
+    fs.writeFile(`${data.title}.md`, myFile, (err) => {
       if (err) {
         console.log(err)
       };
