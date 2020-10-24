@@ -43,6 +43,8 @@ None
 
 ### Screenshots
 
+![](Assets/ReadmeGeneratorFunctionality.png)
+
 ![](Assets/ReadmeGenerated.png)
 
-![](Assets/ReadmeGeneratorFunctionality.png)
+
