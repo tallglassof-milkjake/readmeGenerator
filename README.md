@@ -1,4 +1,4 @@
-# The Good Readme Generator
+# readme generator
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
@@ -17,12 +17,12 @@
 
 ### Description
 
-This is a simple generator to create a readme file and add it to your repository to help speed up the process
+a readme generator
 
 
 ### Installation
 
-Fork or clone the repository, use your terminal or command line in the directory to run "node index.js" and follow the prompts
+run "node index.js" in the command line and follow prompts
 
 
 ### Constributions
