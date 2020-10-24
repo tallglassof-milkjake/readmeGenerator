@@ -2,7 +2,7 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-![](WorkingGenerator.gif)
+![](Assets/WorkingGenerator.gif)
 
 ## Table of Contents
 
@@ -40,3 +40,9 @@ None
 ### Questions
 
 **Any questions please contact me either [here](https://github.com/tallglassof-milkjake) or at jrmackinlay90@gmail.com
+
+### Screenshots
+
+![](Assets/ReadmeGenerated.png)
+
+![](Assets/ReadmeGeneratorFunctionality.png)
